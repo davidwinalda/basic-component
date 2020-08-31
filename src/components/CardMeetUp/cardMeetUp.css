@@ -1,0 +1,7 @@
+.cardJoinUs {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #2f2f2f;
+  color: #fff;
+  padding: 100px;
+}

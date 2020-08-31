@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import Select from 'react-select'
+
+import CardMeetUp from './components/CardMeetUp/CardMeetUp';
+import Button from './components/Button/Button';
 import './App.css';
 
 function App() {
+
+  const options = [
+    { value: 'chocolate', label: 'Chocolate' },
+    { value: 'strawberry', label: 'Strawberry' },
+    { value: 'vanilla', label: 'Vanilla' }
+  ]
+
+  const thanksForSubmitForm = () => {
+    alert('Terima kasih sudah submit form');
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Call component */}
+      <CardMeetUp />
+      <Select options={options} />
+      <Button textButton="Submit" onClick={thanksForSubmitForm} disabled/>
     </div>
   );
 }
