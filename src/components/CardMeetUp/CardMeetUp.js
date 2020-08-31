@@ -19,7 +19,7 @@ const CardMeetUp = () => {
         </div>
         <div>
           <p>Hacktiv 8 Meetup</p>
-          <Button textButton="JOIN US" />
+          <Button textButton="JOIN US" onClick={thanksForJoin}/>
         </div>
       </div>
     </div>
