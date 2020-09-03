@@ -1,0 +1,23 @@
+.wrapper {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.wrapperNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2F2F2F;
+  padding: 10px 20px;
+}
+
+.listWrapper {
+  list-style-type: none;
+  padding: 0;
+}
+
+.listWrapper li {
+  display: inline;
+  padding-right: 15px;
+}
