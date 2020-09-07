@@ -1,0 +1,11 @@
+.wrapperPastMeetUp {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.loadingState {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
